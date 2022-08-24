@@ -18,20 +18,21 @@
                 theme: {
                     extend: {
                         colors: {
-                            laravel: "#ef3b2d",
+                            laravel: "#fc7202",
                         },
                     },
                 },
             };
         </script>
+        
         <title>DigiDream JOB | Find IT Jobs & Projects</title>
     </head>
-    <body class="mb-48">
-        <nav class="flex justify-between items-center mb-4">
-            <a href="index.html"
-                ><img class="w-24" src="{{asset('images/logo_ddj.png')}}" alt="" class="logo"
+    <body class="mb-48 bg-slate-700">
+        <nav class="flex justify-between items-center mb-4 bg-slate-700">
+            <a href="/"
+                ><img class="w-24" src="{{asset('images/logo-ddj.png')}}" alt="" class="logo"
             /></a>
-            <ul class="flex space-x-6 mr-6 text-lg">
+            <ul class="text-orange-300 flex space-x-6 mr-6 text-lg">
                 <li>
                     <a href="register.html" class="hover:text-laravel"
                         ><i class="fa-solid fa-user-plus"></i> Register</a
@@ -46,13 +47,13 @@
             </ul>
         </nav>
 <body>
-    <main>
+    <main class='bg-slate-700'>
         @yield('content')
     </main>
     <footer
     class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center"
 >
-    <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+    <p class="ml-2">2022&copy;Xavier Coënen-Corbo</p>
 
     <a
         href="create.html"

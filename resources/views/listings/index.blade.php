@@ -1,20 +1,26 @@
 <x-layout>
-@include('partials._hero')
-@include('partials._search')
+    @include('partials._hero')
+    @include('partials._search')
 
 
 
-<div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4">
+    <div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4">
 
-@unless(count($listings) == 0)
+        @unless(count($listings) == 0)
 
-@foreach ($listings as $listing)
-{{-- CALL COMPONENT LISTING-CARD --}}
-<x-listing-card :listing="$listing"/>
-@endforeach
+            @foreach($listings as $listing)
+                {{-- CALL COMPONENT LISTING-CARD --}}
+                <x-listing-card :listing="$listing" />
+            @endforeach
 
-@else
-<p>No Listings found</p>
-@endunless
-</div>
+        @else
+            <p>No Listings found</p>
+        @endunless
+    </div>
+
+    {{-- PAGINATION --}}
+    <div class="mt-6 p-4">
+        {{ $listings->links() }}
+    </div>
+
 </x-layout>

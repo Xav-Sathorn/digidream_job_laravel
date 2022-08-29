@@ -44,6 +44,12 @@ class ListingController extends Controller
             'description' => 'required',
         ]);
 
+        if ($request->hasFile('logo')) {
+
+            /* PATH TO IMG FOLDER STORAGE IN CASE OF LOGO UPLOAD */
+            $formFields['logo'] = $request->file('logo')->store('logos', 'public');
+        }
+
         Listing::create($formFields);
 
         return redirect('/')->with('message', 'Listing created successfully!');

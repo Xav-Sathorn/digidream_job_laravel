@@ -111,7 +111,7 @@
 
             <div class="mb-6">
                 <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-slate-600">
-                    Create Gig
+                    Update Offer
                 </button>
                 <button class="bg-red-800 text-white rounded py-2 px-4 hover:bg-slate-600">
 

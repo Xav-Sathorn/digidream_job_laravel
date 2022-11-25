@@ -27,7 +27,7 @@
     <title>DigiDream JOB | Find IT Jobs & Projects</title>
 </head>
 
-<body class="mb-48 bg-slate-700">
+<body class="bg-slate-700">
     <nav class="flex justify-between items-center mb-4 bg-slate-700">
         <a href="/"><img class="w-24" src="{{ asset('images/logo-ddj.png') }}" alt=""
                 class="logo" /></a>
@@ -63,7 +63,7 @@
     </nav>
 
     <body>
-        <main class='bg-slate-700'>
+        <main class='mb-32 bg-slate-700'>
             {{ $slot }}
         </main>
         <footer

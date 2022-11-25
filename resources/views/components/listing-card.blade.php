@@ -2,9 +2,9 @@
 
 
     <x-card>
-        <div class="flex">
-            <img class="hidden w-48 mr-6 md:block"
-                src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('images/no-image.png') }}"
+        <div class="flex ">
+            <img class="hidden w-48 mr-6 md:block "
+                src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('images/github_PNG51.webp') }}"
                 alt="" />
             <div>
                 <h3 class="text-2xl">

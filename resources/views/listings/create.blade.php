@@ -110,7 +110,7 @@
                 <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-slate-600">
                     Create Gig
                 </button>
-                <button class="bg-red-800 text-white rounded py-2 px-4 hover:bg-slate-600">
+                <button class="bg-red-600 text-white rounded py-2 px-4 hover:bg-slate-600">
 
                     <a href="/"> Back </a>
                 </button>
